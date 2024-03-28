@@ -1,0 +1,23 @@
+CREATE DATABASE CRUDMVCAPI
+go
+
+USE CRUDMVCAPI
+go
+
+CREATE TABLE PEOPLE(
+id int identity(1,1) primary key,
+name varchar(50),
+age int
+)
+go
+
+--Datos insertados
+insert into PEOPLE
+values
+('Pepito',15),
+('Agustin',30),
+('Pablo',45),
+('Maria',12)
+go
+
+select * from PEOPLE
